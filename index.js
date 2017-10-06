@@ -15,7 +15,7 @@ function deleteFromObjectByKey(object, key){
   var newObject = Object.assign({}, object)
 
   //delete the key in the clone
-  delete newObject[key]
+  delete newObject[key] //dot notation doesn't satisfy the requirements of this test for some reason
 
   //return the clone
   return newObject
